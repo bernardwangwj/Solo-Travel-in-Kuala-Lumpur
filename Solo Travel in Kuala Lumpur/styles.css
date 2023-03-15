@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+h1{
+    font-size: 5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.5em;
+    padding: 30px;
+}
+
+h4{
+margin: 0.625px auto 1.5em auto;
+    text-align: center;
+}
+
+
+#background-video {
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 40%;
+  }
+
+  .video-title{
+    top: 3.125em;
+    order: 2;
+  }
+
+  .bold-text{
+    font-weight: 600;
+    color: rgb(226, 20, 55);
+  }
+
+  .intro,
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+  }
+
+  .top-header,
+  .video-title-subtitle{
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .top-header{
+    order: 1;
+    width: 12em;  
+    margin-top: 0;
+    border-top:0.2em solid rgb(226, 20, 55);
+    display:inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .video-title-subtitle{
+    display: block;
+    order: 3;
+    color:blue;
+    font-size: 2em;
+  }
+
+.profile-photo{
+    border-radius: 20%;
+    width: 16.5em;
+    height: 16.5em;
+    margin: auto;
+     object-fit: cover;
+}
+
+  .main-content{
+ align-content: center;
+ 
+  }
+
+.main-title{
+    margin-bottom: 0;
+
+}
+
+.pro{
+    color: rgb(226, 20, 55);
+}
+
+.register-today{
+    margin-top: 0;
+    color: blue;
+}
+
+
+form{
+display: flex;
+flex-direction: column;
+width: 30%;
+margin: auto;
+}
+
+input{
+border: 2px dotted rgb(226, 20, 55);
+border-radius: 10px 15px;
+margin-bottom: 20px;
+padding: 5px;
+}  
+
+::placeholder { 
+color: red;
+opacity: 1;
+text-align: center;
+font-size: 1.3em;
+}
+      
+
+  button{
+    background-color:rgb(226, 20, 55);
+    color: white;
+    font-size: x-large;
+    border-radius: 10px 15px;
+    padding: 5px;
+  }
+
+  @media (max-width: 600px) and (min-width: 460px) {
+    body {
+        display: block;
+        flex-direction: column;
+        width:inherit;
+        margin: auto;
+    }
+    
+    .intro,
+    .main-content,
+    .profile-photo,
+    #background-video {
+      justify-content: space-between;
+      text-align: center;
+      width:inherit;
+      align-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profile-photo{
+      margin-top: 25px;
+    }
+
+      .main-content{
+        margin-top: 20em;
+      }
+
+      .top-header{
+        margin-top: 0;
+      }
+  }
